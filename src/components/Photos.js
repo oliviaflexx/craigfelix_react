@@ -1,5 +1,6 @@
 import React from "react";
 import { Image } from "cloudinary-react";
+import Fadein from "./FadeIn";
 
 function Photos(props) {
     const category = props.category;
@@ -36,10 +37,14 @@ function Photos(props) {
         {photoArray.map((num) => {
           const publicId = category + "/" + num;
           return (
-            <div key={num.toString()} className="col-xl-3 col-md-4 col-sm-6">
-              <div onClick={fullscreen} className="photo fade-in">
-                <Image cloudName="www-craigfelix-com" publicId={publicId} />
-              </div>
+            <div
+              key={num.toString()}
+              onClick={fullscreen}
+              className="col-xl-3 col-md-4 col-sm-6"
+            >
+              <Fadein>
+                  <Image cloudName="www-craigfelix-com" publicId={publicId} />
+              </Fadein>
             </div>
           );
         })}

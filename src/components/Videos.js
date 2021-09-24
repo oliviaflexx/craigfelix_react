@@ -17,7 +17,7 @@ function Videos(props) {
 
         return (
           <div className="col-xl-3 col-md-4 col-sm-6">
-            <div class="video fade-in">
+            <div class="video">
               <Video
                 cloudName="www-craigfelix-com"
                 publicId={publicId}
