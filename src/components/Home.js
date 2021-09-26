@@ -1,7 +1,6 @@
 import React from "react";
 import { Video } from "cloudinary-react";
 import Footer from "./Footer";
-import { useHistory } from "react-router-dom";
 
 function Home() {
     return (

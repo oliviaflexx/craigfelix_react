@@ -1,6 +1,6 @@
 import React from "react";
 // react router
-import { Redirect, BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Home from "./Home";
 import Travel from "./Travel";
