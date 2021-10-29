@@ -1,5 +1,5 @@
 import React from "react";
-import { Video, Image } from "cloudinary-react";
+import { Video } from "cloudinary-react";
 import Footer from "./Footer";
 
 function Home() {
@@ -15,7 +15,16 @@ function Home() {
   function checkMatch(x) {
     if (x.matches) {
       // If media query matches
-      setBackground(<Image cloudName="www-craigfelix-com" publicId="st_lucia17" />);
+      setBackground(
+        <Video
+          cloudName="www-craigfelix-com"
+          publicId="main-mobile"
+          loop={true}
+          autoPlay={true}
+          sourceTypes="mov"
+          muted
+        />
+      );
     }
   }
 
