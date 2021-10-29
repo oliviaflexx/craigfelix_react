@@ -40,7 +40,6 @@ function Home() {
         <main className="home">
           <section className="video-container" id="render-here">
             {background}
-            <p id="main-quote">See the world through Craig's eyes</p>
             <div class="bottom-fade"></div>
           </section>
         </main>
