@@ -23,6 +23,7 @@ function Home() {
           autoPlay={true}
           sourceTypes="mov"
           muted
+          playsinline
         />
       );
     }
