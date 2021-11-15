@@ -1,6 +1,6 @@
 import React from "react";
 // react router
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
 
 import Home from "./Home";
 import Travel from "./Travel";
@@ -17,7 +17,7 @@ const ReactRouter = () => {
       <Navbar />
       <Switch>
         <Route exact path="/">
-          <Home />
+          <Redirect to="/home" />
         </Route>
         <Route path="/travel">
           <Travel />
@@ -30,6 +30,9 @@ const ReactRouter = () => {
         </Route>
         <Route path="/about">
           <About />
+        </Route>
+        <Route path="/home">
+          <Home />
         </Route>
         <Route path="*">
           <Error />

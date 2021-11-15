@@ -374,7 +374,7 @@ nav.navbar.navbar-expand-lg {
 }
 
 .nav-link, button.navbar-toggler > span {
-    color: rgba(255,255,255,.75);
+    color: white;
     font-weight: 300;
     font-size: 1.5rem;
     margin: 2%;
@@ -385,7 +385,7 @@ a:hover {
 }
 
 .nav-link:hover {
-    color: white;
+    color: rgba(255,255,255,.75);
 }
 
 .nav-link.active {
@@ -466,8 +466,11 @@ footer .bottom-fade {
     background: linear-gradient(0deg, black 65%, transparent 100%);
 }
 #about-text {
-    padding: 10%;
+    padding: 5%;
     font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .personal-text {
@@ -476,6 +479,8 @@ footer .bottom-fade {
 .non-personal-text {
     font-weight: 300;
     margin-bottom: 5%;
+    line-height: 35px;
+    max-width: 600px;
 }
 .active {
     opacity: 1;
@@ -624,8 +629,8 @@ a.mail:hover {
 } 
 
 footer {
-    background: url(https://res.cloudinary.com/www-craigfelix-com/image/upload/v1632445145/nav-pic.jpg);
-    background-size: cover;
+    /* background: url(https://res.cloudinary.com/www-craigfelix-com/image/upload/v1632445145/nav-pic.jpg);
+    background-size: cover; */
     background-position: bottom;
     margin-top: 0;
     position: relative;
@@ -721,6 +726,7 @@ main.home {
     padding: 0;
 }
 
-.error-button {
-  
+#about-text img {
+  max-width: 600px;
+  max-height: 500px;
 }

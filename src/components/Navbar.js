@@ -41,6 +41,16 @@ const Navbar = () => {
               <ul className="navbar-nav">
                 <li className="nav-item">
                   <NavLink
+                    to="/home"
+                    className={(isActive) =>
+                      "nav-link" + (!isActive ? "" : " active")
+                    }
+                  >
+                    Home
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink
                     to="/aerials"
                     className={(isActive) =>
                       "nav-link" + (!isActive ? "" : " active")
