@@ -6,12 +6,12 @@ function Commercial() {
     return (
       <React.Fragment>
         <main>
-          <h1 class="title">Commercial</h1>
+          <h1 className="title">Commercial</h1>
           <div className="row">
             <Photos numPhotos={24} category="commercial" />
           </div>
         </main>
-        <Footer class="" />
+        <Footer/>
       </React.Fragment>
     );
 }

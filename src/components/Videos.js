@@ -1,5 +1,5 @@
 import React from "react";
-import { Video } from "cloudinary-react";
+import { Video, Transformation } from "cloudinary-react";
 
 function Videos(props) {
     const numVideos = props.numVideos;
@@ -16,14 +16,16 @@ function Videos(props) {
         const publicId = "aerial_footage/" + num;
 
         return (
-          <div className="col-xl-3 col-md-4 col-sm-6">
-            <div class="video">
+          <div key={num} className="col-xl-3 col-md-4 col-sm-6">
+            <div className="video">
               <Video
                 cloudName="www-craigfelix-com"
                 publicId={publicId}
                 sourceTypes="mov"
                 controls
-              />
+              >
+                {/* <Transformation videoCodec="auto" crop="scale" /> */}
+              </Video>
             </div>
           </div>
         );

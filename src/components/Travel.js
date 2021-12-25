@@ -6,12 +6,12 @@ function Travel() {
     return (
       <React.Fragment>
         <main>
-          <h1 class="title">Travel</h1>
+          <h1 className="title">Travel</h1>
           <div className="row">
             <Photos numPhotos={89} category="travel" />
           </div>
         </main>
-        <Footer class="" />
+        <Footer/>
       </React.Fragment>
     );
 }

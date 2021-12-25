@@ -1,5 +1,5 @@
 import React from "react";
-import { Image } from "cloudinary-react";
+import { Image, Transformation } from "cloudinary-react";
 import Fadein from "./FadeIn";
 
 function Photos(props) {
@@ -24,7 +24,9 @@ function Photos(props) {
     function Fullscreen(props) {
       return (
         <div id="fullscreen" className="active" onClick={fullscreen}>
-          <Image cloudName="www-craigfelix-com" publicId={props.src} />
+          <Image cloudName="www-craigfelix-com" publicId={props.src}>
+            <Transformation quality="auto" fetchFormat="auto" />
+          </Image>
         </div>
       );
     }
@@ -43,7 +45,9 @@ function Photos(props) {
               className="col-xl-3 col-md-4 col-sm-6"
             >
               <Fadein>
-                  <Image cloudName="www-craigfelix-com" publicId={publicId} />
+                <Image cloudName="www-craigfelix-com" publicId={publicId}>
+                  <Transformation quality="auto" fetchFormat="auto" />
+                </Image>
               </Fadein>
             </div>
           );
