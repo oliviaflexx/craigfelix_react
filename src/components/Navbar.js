@@ -1,7 +1,23 @@
 import React from "react";
-import { NavLink, Link } from "react-router-dom";
+import {
+  NavLink,
+  Link,
+  useLocation,
+  useHistory
+} from "react-router-dom";
 
 const Navbar = () => {
+  let location = useLocation();
+  // let history = useHistory();
+  const [isNavCollapsed, setIsNavCollapsed] = React.useState(true);
+  const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
+
+  React.useEffect(() => {
+    // history.push(location);
+    setIsNavCollapsed(true);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [location]);
+
     return (
       <React.Fragment>
         <div className="logo">
@@ -35,12 +51,16 @@ const Navbar = () => {
               data-bs-toggle="collapse"
               data-bs-target="#navbarNav"
               aria-controls="navbarNav"
-              aria-expanded="false"
               aria-label="Toggle navigation"
+              aria-expanded={!isNavCollapsed ? true : false}
+              onClick={handleNavCollapse}
             >
               <span>Menu</span>
             </button>
-            <div className="collapse navbar-collapse" id="navbarNav">
+            <div
+              className={`${isNavCollapsed ? "collapse" : ""} navbar-collapse`}
+              id="navbarNav"
+            >
               <ul className="navbar-nav">
                 <li className="nav-item">
                   <NavLink

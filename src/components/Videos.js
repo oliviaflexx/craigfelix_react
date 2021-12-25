@@ -1,5 +1,5 @@
 import React from "react";
-import { Video, Transformation } from "cloudinary-react";
+import { Video } from "cloudinary-react";
 
 function Videos(props) {
     const numVideos = props.numVideos;
