@@ -3,7 +3,6 @@ import {
   NavLink,
   Link,
   useLocation,
-  useHistory
 } from "react-router-dom";
 
 const Navbar = () => {
