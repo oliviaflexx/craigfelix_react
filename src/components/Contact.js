@@ -36,6 +36,7 @@ function Contact() {
           </form>
           <form name="contact" method="POST" data-netlify="true" netlify>
             <h2>Contact</h2>
+            <input type="hidden" name="form-name" value="contact" />
             <p>
               <label>Your Name:</label>
               <input type="text" name="name" />
