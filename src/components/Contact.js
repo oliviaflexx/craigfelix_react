@@ -29,11 +29,6 @@ function Contact() {
             </p>
             <Image cloudName="www-craigfelix-com" publicId={"about"} />
           </div>
-          <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-            <input type="text" name="name" />
-            <input type="email" name="email" />
-            <textarea name="message"></textarea>
-          </form>
           <form name="contact" method="POST" data-netlify="true" netlify>
             <h2>Contact</h2>
             <input type="hidden" name="form-name" value="contact" />
