@@ -6,9 +6,8 @@ import Home from "./Home";
 import Travel from "./Travel";
 import Commercial from "./Commercial";
 import Aerials from "./Aerials";
-import About from "./About";
+import Contact from "./Contact";
 import Error from "./Error";
-
 import Navbar from "./Navbar";
 
 const ReactRouter = () => {
@@ -28,8 +27,8 @@ const ReactRouter = () => {
         <Route path="/aerials">
           <Aerials />
         </Route>
-        <Route path="/about">
-          <About />
+        <Route path="/contact">
+          <Contact />
         </Route>
         <Route path="/home">
           <Home />

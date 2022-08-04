@@ -103,12 +103,12 @@ const Navbar = () => {
                 </li>
                 <li className="nav-item">
                   <NavLink
-                    to="/about"
+                    to="/contact"
                     className={(isActive) =>
                       "nav-link" + (!isActive ? "" : " active")
                     }
                   >
-                    About
+                    Contact
                   </NavLink>
                 </li>
               </ul>
