@@ -8,7 +8,7 @@ function Travel() {
         <main>
           <h1 className="title">Travel</h1>
           <div className="row">
-            <Photos numPhotos={89} category="travel" />
+            <Photos numPhotos={93} category="travel" />
           </div>
         </main>
         <Footer/>
