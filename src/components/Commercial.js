@@ -8,7 +8,7 @@ function Commercial() {
         <main>
           <h1 className="title">Commercial</h1>
           <div className="row">
-            <Photos numPhotos={24} category="commercial" />
+            <Photos numPhotos={38} category="commercial" />
           </div>
         </main>
         <Footer/>
