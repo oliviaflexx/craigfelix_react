@@ -11,7 +11,7 @@ function Footer(props) {
             craigfelix360@gmail.com
           </a>
           <p className="credits">
-            © 2022 Craig Felix // Created by Olivia Felix
+            © {new Date().getFullYear()} Craig Felix // Created by Olivia Felix
           </p>
         </div>
         <div className="bottom-fade"></div>
